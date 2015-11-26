@@ -1,4 +1,41 @@
 body {
+background:url(../img/fundo.png);
+
+
+> #header {
+		> .content {
+			@include make-row;
+			
+			> .logo1 {
+			
+			@include make-xs-column-offset(3);
+			
+				
+			
+			}
+			
+			
+			> .logo2 {
+				
+			
+			
+			
+			}
+		
+		
+		}
+	
+	
+	}
+	
+
+section {
+	> #localizacao{
+		margin-left:10px;
+	}
+
+}
+
 
 footer .glyphicon {
     font-size: 20px;
@@ -18,17 +55,18 @@ footer .glyphicon {
 	 margin-top:5px;
 	
 	
+	
 	> #subRow {
 	
 		> #myCarousel{
-		margin-left:150px;
+		margin-left:100px;
 		
 		> .carousel-inner{
 		
 			> .item{
 			width:1060px;
 			> .carousel-caption{
-			
+			margin-left:-350px;
 			
 			}
 			}
@@ -42,74 +80,21 @@ footer .glyphicon {
 
 
 }
-  background:url(../img/fundo.png);
-	> header {
-	padding:25px 0;
-	> .content{
-	 	@include make-row;
-	 	> .logo-container {
-	 	
-	 		margin-top:-10px;
-	 		@include make-md-column(6);
-	 		@include make-sm-column(4);
-	 		@include make-xs-column(12);
-	 		
-	 		> .logo-container__logo {	 		
-	 		
-	 		margin-left:10%;
-	 		margin-top:-5%;
-	 		
-	 		a > #icoTw{
-	 		
-	 		margin-left:305%;
-	 		margin-top:-50px;
-	 		}
-	 		a > #icoyoutube{
-	 		margin-left:270%;
-	 		margin-top:-45px;
-	 		 
-	 		}
-	 		a > #icoFace{
-	 			margin-left:250%;
-	 			margin-top:-90px;
-	 		}
-	 		}
-	 	}
-	 	> .search-container {
-	 	@include make-md-column(4);
-	 	@include make-sm-column(4);
-	 	@include make-xs-column(12);
-	 	
-	 	
-	 	@include make-md-column-offset(5);
-	 	@include make-sm-column-offset(4);
-	 	@include make-xs-column-offset(0);
-	 	
-	 	
-	 	
-	 	input.search-container__input.form-control{
-	 	width:267px;
-	 	margin-left:10%;
-		height:45px;
-		font:13px $font_main;
-		color:#cccccc;
-		margin-top:7px;
-		border: 1px solid #DDDDDD;
-		
-	         }
-	      }
-	 	}
-	}
+  
+	
+	
+	
 	
 	> #navegacao{
 	
 	background:#065206;
-	margin-top:25px;
+	margin-top:5px;
 		> .container {
 			> #navegacao__content {
 			@include make-md-column(12);
 			.navbar {
 			
+			margin-left:75px;
 				border-radius: 0;
 				background:#065206;
 				box-shadow:none;

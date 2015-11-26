@@ -1,12 +1,81 @@
 /*MOBILE*/
 
-@media screen and (min-width: 1px) and (max-width: 700px) {
+@media screen and (min-width: 1px) and (max-width: 755px) {
 	
 	body {
-	p {
-	color:pink;
+	
+	>.row{	
+	
+	 margin-left:-112px;
+	> #subRow {	
+		> #myCarousel{
+		
+		
+		> .carousel-inner{
+		
+			> .item{
+			width:600px;
+			height:200px;
+			
+			> .carousel-caption{
+			margin-left:-200px;
+			
+			}
+			}
+			
+		
+		}
+	
 	}
+	}
+	
 
+
+}
+  
+	
+	> #navegacao{ 
+	margin-top:-10px;
+	}
+		> #header {
+		> .content {
+			@include make-row;
+			
+			> .logo1 {
+			
+				
+			
+			}
+			
+			
+			> .logo2 {
+				
+			> .panel-body {
+			
+			a > #icoFace {
+			margin-left:10%;
+			}
+			a > #icoyoutube{
+			margin-left:30%;
+			margin-top:-45px;
+			}
+			
+			a > #icoTw{
+			margin-left:70%;
+			margin-top:-45px;
+			}
+			
+			}
+			
+			
+			}
+		
+		
+		}
+	
+	
+	}
+			
 	}
 	
 }/*FIM MOBILE*/
@@ -16,9 +85,61 @@
 /*TABLE*/
 @media screen and (min-width: 701px) and (max-width: 1024px) { 
 	
-	body {
-	p {
-	color:blue;
+	body {	
+	
+	> #header {
+		> .content {
+			@include make-row;
+			
+			> .logo1 {
+			
+			@include make-sm-column-offset(0);
+			
+			
+			}
+			
+			
+			> .logo2 {
+			margin-top:-150px;
+				@include make-sm-column(5);
+				@include make-sm-column-offset(6);
+			
+			a > #icoFace {
+			margin-left:10%;
+			}
+			a > #icoyoutube{
+			margin-left:30%;
+			margin-top:-45px;
+			}
+			
+			a > #icoTw{
+			margin-left:70%;
+			margin-top:-45px;
+			}
+			
+			}
+		
+		
+		}
+	
+	
+	}
+	
+	
+	>.row{	
+		> #subRow {	
+			> #myCarousel{
+				margin-left:5px;
+				> .carousel-inner{
+					> .item{ 
+					width:930px;
+				}	 
+			
+			}		
+		 }	
+	}
+	 
+	 
 	}
 
 	}
@@ -29,8 +150,43 @@
 @media screen and (min-width: 1025px) and (max-width:1500px) {
 
 body {
-	p {
-	color:red;
+
+	> #header {
+		> .content {
+			@include make-row;
+			
+			> .logo1 {
+			
+			@include make-sm-column-offset(0);
+			
+			
+			}
+			
+			
+			> .logo2 {
+			margin-top:-150px;
+				@include make-sm-column(3);
+				@include make-sm-column-offset(9);
+			
+			a > #icoFace {
+			margin-left:10%;
+			}
+			a > #icoyoutube{
+			margin-left:30%;
+			margin-top:-45px;
+			}
+			
+			a > #icoTw{
+			margin-left:70%;
+			margin-top:-45px;
+			}
+			
+			}
+		
+		
+		}
+	
+	
 	}
 
 }

@@ -12,31 +12,44 @@
 	
 }
 
+#space{
+	
+	margin-top:110px;
+	
+}
 .widgets {
 	
-	opacity:0.9;
+	
 }
 .sidebar .widgets {
+	box-shadow: 2px 2px 2px #888888;
 	width: 300px;
-	
+	background-color:white;
 	border: 1px solid white;
 	padding: 18px;
 	font-family: Helvetica;
 	font-size: 20px;
 	color: #333333;
-	margin-top: 40px;
-	margin-left: 13%;
+	margin-top: 39px;
+	margin-left:5%;
+	opacity:0.9;
 	
 }
 
-.widgets h3{
+.widgets h4{
 	
-	margin-left: 13%;
+	margin-left: 35%;
 	margin-top: -5px;
+	color: #065206;
+}
+
+.sidebar .widgets a {
+	margin-left: -20%;
+	font-size: 18px;
 }
 .sidebar .widgets a:hover {
 	font-family: Helvetica;
-	color: white;
+	color: #065206;
 	list-style: none;
 	text-decoration:none; 
 }
