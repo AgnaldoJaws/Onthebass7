@@ -2,9 +2,27 @@
 
 @import url('css/style.css');
 
+
+.text{
+	text-align: justify;
+	
+	width: 	750px;
+}
+.img {
+	margin-left: ;
+}
+
+.title {
+	
+	margin-left: 35%;
+	margin-top: -20px; 	 	
+}
 #sorte{
-	background-color:red;
-	margin-top:-5350px;
+	
+	margin-top:-5135px;
+	margin-left: 115px;
+	background-color: white;
+	width: 793px;
 }
 
 .sidebar {
@@ -14,7 +32,7 @@
 
 #space{
 	
-	margin-top:110px;
+	margin-top:90px;
 	
 }
 .widgets {
