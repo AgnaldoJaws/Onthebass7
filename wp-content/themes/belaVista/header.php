@@ -208,46 +208,45 @@
 
 	</div>
 
-	<div id="space"></div>
-
-	<div class="head">
-		<div id="content_content">
-			
-			<?php $aRecentPosts = new WP_Query("showposts=3"); 
-       while($aRecentPosts->have_posts()) : $aRecentPosts->the_post();?>
-					<div class="panel panel-default">
-					<div  class="panel-body">
-				<div class="title">
-							<h3><?php the_title();?></h3>
-				
-					</div>		
-							<div class="img">
-			  					<?php the_post_thumbnail(array(1000,1000))?>	
-			  				</div>	
-			  				
-			  				<div class="text">
-			  					<?php the_excerpt();?>
-			  				</div>
-			  					
-			  					<a href="<?php the_permalink();?>" class="btn btn-info" role="button">Continuar Lendo</a>
-			  						
-			  				
-			  					
-			  					
-			  					
-							 </div>
-					</div>
-					</div>
-			<?php endwhile; ?>
-		</div>
-			
-
-    </div>
-
 	
 
-	<div class="space2"></div>
+	
+	<section id="">
+	
+	<div class="row" >		
 
+	<div class="col-md-8">
+	<?php $aRecentPosts = new WP_Query("showposts=3"); 
+       while($aRecentPosts->have_posts()) : $aRecentPosts->the_post();?>
+	 			
+				<div class="panel panel-default">
+   
+				<div class="titleS">
+						<h3> <?php the_title();?></h3>
+				</div>
+  				<a href="<?php the_permalink();?>">Link</a>
+  				<div class="img">
+  					<?php the_post_thumbnail(array(750,750))?>	
+  				</div>	
+  				
+  					
+  					<div class="textS">
+  					<?php the_excerpt();?>
+  					</div>
+  					
+  				Publicado por <?php the_author()?>
+						 em <?php the_date("d/m/Y")?>
+				- <?php comments_number("Nenhum Comentário","1 Comentário","% comentários")?>
+  				
+				
+					
+				<?php endwhile; ?>
+	         </div>
+		</div>
+	</div>
+				
+	         
+	</section>
 	<section id=""></section>
 	<section id="sobre"></section>
 	<section id="servico"></section>

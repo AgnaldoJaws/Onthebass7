@@ -5,11 +5,13 @@
 	body {
 	
 	
-	> .head {
-	margin-top:-250px;
-		> #content_content {
-		
+	> .row {
+		> #singleBorder {
+		color:pink;
+		margin-top:-3880px;
+		margin-left:-70px;
 		}
+	
 	}
 	
 	> #space {	
@@ -110,31 +112,20 @@
 	
 	body {
 	
-	> .head {
-	
-		> #content_content {
+	> .row {
+		> #singleBorder {
 		
+		margin-top:-3680px;
+		
+		> .panel {
+		 > panel-body {
+		 
+		 }
 		}
+		}
+	
 	}
 	 	
-	> .row {
-	
-	
-	
-	> #sorte {
-	
-	
-	margin-top:-4650px;
-	
-	> .panel {
-	
-	
-	
-	
-	}
-	}
-	
-	}
 	
 	> #navegacao {
 		> .container {
@@ -216,7 +207,13 @@
 body {
 
 
+	> .row {
+		> #singleBorder {
+		color:blue;
+		margin-top:-3720px;
+		}
 	
+	}
 	
 
 

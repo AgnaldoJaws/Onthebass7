@@ -10,6 +10,20 @@ img,
 }
 
 
+
+@media screen and (min-width: 1025px) and (max-width:1500px) { 
+	
+	.titleS{
+	color:red;
+	margin-left: 25%;
+	}
+	
+	.textS {
+	width: 55%;
+	text-align: justify;
+	margin-left: 10%;
+	}
+}
 @media screen and (min-width: 1025px) and (max-width:1500px) { 
 	
 img, 
@@ -27,6 +41,8 @@ img,
 	width:74%;
 	
 }
+
+
 	
 }
 
@@ -87,32 +103,11 @@ section {
 	opacity:0.9;
 	
 }
-@media screen and (min-width: 701px) and (max-width: 1024px) {  
-	.text{
-	text-align: justify;	
-	width: 95%;
-	
-	}
-	
-	.btn {
-	margin-left: 50%;
-	}
+
 	
 	
-}
 	
-	@media screen and (min-width: 801px) and (max-width: 1024px) {  
-	.text{
-	text-align: justify;	
-	width: 77%;
-	margin-left: 15%;
-	
-}
-	
-.img {
-	margin-left: 15%;
-}
-}
+
 @media screen and (min-width: 1px) and (max-width: 755px) { 
 	
 	
@@ -136,166 +131,6 @@ section {
 	margin-left: -50px;
 	}
 }
-@media screen and (min-width: 1px) and (max-width:615px) { 
-	
-	#sorte {
-	
-	margin-top:-4732px;
-	margin-left: -70px;
-	}
-	
-}
-
-@media screen and (min-width: 1px) and (max-width:534px) { 
-	
-	#sorte {
-	
-	margin-top:-4800px;
-	
-	}
-	
-}
-
-
-
-
-@media screen and (min-width: 1px) and (max-width:475px) { 
-	
-	#sorte {
-	
-	margin-top:-4852px;
-	}
-	
-}
-
-
-@media screen and (min-width: 1px) and (max-width:434px) { 
-	
-	#sorte {
-	
-	margin-top:-4902px;
-	}
-	
-}
-
-
-@media screen and (min-width: 1px) and (max-width:396px) { 
-	
-	#sorte {
-	
-	margin-top:-4970px;
-	}
-	
-}
-
-@media screen and (min-width: 1px) and (max-width:445px) { 
-	
-	#sorte {
-	
-	margin-top:-4880px;
-	}
-	
-}
-
-@media screen and (min-width: 1px) and (max-width:431px) { 
-	
-	#sorte {
-	
-	margin-top:-4910px;
-	}
-	
-}
-
-@media screen and (min-width: 1px) and (max-width:388px) { 
-	
-	#sorte {
-	
-	margin-top:-4965px;
-	}
-	
-}
-
-@media screen and (min-width: 1px) and (max-width:380px) { 
-	
-	#sorte {
-	
-	margin-top:-5025px;
-	}
-	
-}
-
-
-@media screen and (min-width: 1px) and (max-width:400px) { 
-	
-	#sorte {
-	
-	margin-top:-4965px;
-	}
-	
-}
-
-@media screen and (min-width: 1px) and (max-width:361px) { 
-	
-	#sorte {
-	
-	margin-top:-5025px;
-	}
-	
-}
-
-
-@media screen and (min-width: 1px) and (max-width:349px) { 
-	
-	#sorte {
-	
-	margin-top:-5052px;
-	}
-	
-}
-
-@media screen and (min-width: 1px) and (max-width:349px) { 
-	
-	#sorte {
-	
-	margin-top:-5052px;
-	}
-	
-}
-
-
-@media screen and (min-width: 1px) and (max-width:350px) { 
-	
-	#sorte {
-	
-	margin-top:-5172px;
-	}
-	
-}
-
-@media screen and (min-width: 1px) and (max-width:300px) { 
-	
-	#sorte {
-	
-	margin-top:-5232px;
-	}
-	
-}
-
-@media screen and (min-width: 701px) and (max-width: 1024px) { 
-	
-	
-.sidebar .widgets { 
-	
-	margin-top: 15px;
-}
-
-
-	}
-	
-	
-
-
-	
 
 
 

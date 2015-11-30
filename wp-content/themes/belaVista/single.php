@@ -2,22 +2,21 @@
 
 
 			
-				
-  		<div class="row" >
+		
+		<div class="row" >
 	
 	
 
-	<div id ="sorte" class="col-md-12">
+	<div id ="singleBorder" class="col-md-8">
 		
-	 <?php 	if (have_posts ()) : while ( have_posts () ) : 	the_post ();?>	
+  		<?php 	if (have_posts ()) : while ( have_posts () ) : 	the_post ();?>	
 	 			
-				<div id="cara" class="panel panel-default">
-   
+				<div class="panel panel-default">
+   			<div class="panel-body">
 				<div class="title">
 						<h3> <?php the_title();?></h3>
 				</div>
-  				
-  				<div class="img">
+				<div class="img">
   					<?php the_post_thumbnail(array(750,750))?>	
   				</div>	
   				
@@ -31,15 +30,16 @@
 				- <?php comments_number("Nenhum Comentário","1 Comentário","% comentários")?>
   				
 				
-					
+				</div>
+				</div>
 				<?php endwhile;  else :?>
 				<p>Nenhum post</p>				
 				<?php endif;?>
-				
-	         </div>
-		</div>
 	</div>
-				
+
+	
+	
+	</div>			
 	         
 		
 	
