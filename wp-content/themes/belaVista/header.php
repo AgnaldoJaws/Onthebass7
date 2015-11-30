@@ -31,55 +31,52 @@
 <?php wp_head(); ?>
 
 <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 80%;     
-      height: 300px;
-     
-      
-  }
-  </style>
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	width:100%;
+	height: 340px;
+}
+</style>
 </head>
 
 
 <body id="myPage" data-spy="scroll" data-target=".navbar"
 	data-offset="60">
-	
-	
-	
-	<header id="header"class="container">
+
+
+
+	<header id="header" class="container">
 		<div class="content">
 			<div class="logo1">
-					
-                  		
-                  
-                  			<a href="<?php echo get_option('home');?>"> <img
-						src="http://onthebass.com.br/logo.png" class="img-responsive"></a>
-                  		
-                    
+
+
+
+				<a href="<?php echo get_option('home');?>"> <img
+					src="http://onthebass.com.br/logo.png" class="img-responsive"></a>
+
+
 			</div>
-			
+
 			<div class="logo2">
-			
-			<div class="panel-body">
-				
-				<form action="">
-					<input class="form-control search-container__input" type="text"
-						placeholder="Pesquisar no site">
-				</form>
-			
-  					
-  						<a href="https://www.facebook.com/belavistaagroecologico/?fref=ts"><img
+
+				<div class="panel-body">
+
+					<form action="">
+						<input class="form-control search-container__input" type="text"
+							placeholder="Pesquisar no site">
+					</form>
+
+
+					<a href="https://www.facebook.com/belavistaagroecologico/?fref=ts"><img
 						src="http://onthebass.com.br/icoFace.png" id="icoFace"
 						class="img-responsive"></a> <a href="#"><img
 						src="http://onthebass.com.br/icoyoutube.png" id="icoyoutube"
 						class="img-responsive"></a> <a href="#"><img
 						src="http://onthebass.com.br/icoTw.png" id="icoTw"
 						class="img-responsive"></a>
-  			</div>
 				</div>
 			</div>
-			
+		</div>
+
 	</header>
 
 
@@ -108,14 +105,12 @@
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="<?php echo get_option('home');?>">Home
 								</a></li>
-								<li><a href="#sobre" data-scroll>Sobre</a></li>
-								<li><a href="#servicos">Servicos</a></li>
-								<li><a href="#produtos">Produtos</a></li>
-
-								<li><a href="#localizacao">Localizacao</a></li>
+								<li><a href="#sobre" data-scroll>Sobre</a></li>	
+								<li><a href="#servicos" data-scroll>Servicos</a></li>
+								<li><a href="#localizacao" data-scroll>localizacao</a></li>									
 								<li><a href="#contato">Contato</a></li>
-								<li><?php wp_list_categories('title_li=');?> </li>
 								
+
 
 							</ul>
 
@@ -134,7 +129,7 @@
 
 
 	<div class="row">
-		<div id="subRow"class="col-md-8">
+		<div id="subRow" class="col-md-8">
 
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
@@ -148,34 +143,35 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<img src="http://onthebass.com.br/img2.jpg" class="img-responsive" alt="Chania">
+						<img src="http://onthebass.com.br/img2.jpg" class="img-responsive"
+							alt="Chania">
 						<div class="carousel-caption">
-							<h3>Agnaldo</h3>
-							<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+							<h2>Agnaldo</h2>
+							<h4>The atmosphere in Chania has a touch of Florence and Venice.</h4>
 						</div>
 					</div>
 
 					<div class="item">
 						<img src="http://onthebass.com.br/img4.jpg" alt="Chania">
 						<div class="carousel-caption">
-							<h3>Chania</h3>
-							<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+							<h2>Chania</h2>
+							<h4>The atmosphere in Chania has a touch of Florence and Venice.</h4>
 						</div>
 					</div>
 
 					<div class="item">
 						<img src="http://onthebass.com.br/img2.jpg" alt="Flower">
 						<div class="carousel-caption">
-							<h3>Flowers</h3>
-							<p>Beatiful flowers in Kolymbari, Crete.</p>
+							<h2>Flowers</h2>
+							<h4>Beatiful flowers in Kolymbari, Crete.</h4>
 						</div>
 					</div>
 
 					<div class="item">
 						<img src="http://onthebass.com.br/img3.jpg" alt="Flower">
 						<div class="carousel-caption">
-							<h3>Flowers</h3>
-							<p>Beatiful flowers in Kolymbari, Crete.</p>
+							<h2>Flowers</h2>
+							<h4>Beatiful flowers in Kolymbari, Crete.</h4>
 						</div>
 					</div>
 				</div>
@@ -212,114 +208,59 @@
 
 	</div>
 
-	<div id="space">ag</div>
+	<div id="space"></div>
 
-	<section clasas="head" id="header">
-	
-		
-	</section>
-
-	<section id="sobre">
-		<h3>SOBRE</h3>
-		<a href="" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-		</a>
-	</section>
-
-	<section id="servicos">
-		<h3>SERVICOS</h3>
+	<div class="head">
+		<div id="content_content">
 			
-							
-	        
-		
-	</section>
-
-	<section id="produtos">
-		<h3>PRODUTOS</h3>
-		<a href="#myPage" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-		</a>
-	</section>
-
-	<section id="noticias">
-		<h3>NOTICIAS</h3>
-		<a href="#myPage" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-			<div class="row">
-	
-	</section>
-
-	<section id="galeria">
-		<h3>GALERIA</h3>
-		<a href="#myPage" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-		</a>
-	</section>
-
-	<section id="localizacao">
-		
-				<h2>Sitio Bela vista</h2>
-				<h3>Bairro Rio Branco, Cananeia-SP, proximo a cachoeira do pitu.</h3>
+			<?php $aRecentPosts = new WP_Query("showposts=3"); 
+       while($aRecentPosts->have_posts()) : $aRecentPosts->the_post();?>
+					<div class="panel panel-default">
+					<div  class="panel-body">
+				<div class="title">
+							<h3><?php the_title();?></h3>
+				
+					</div>		
+							<div class="img">
+			  					<?php the_post_thumbnail(array(1000,1000))?>	
+			  				</div>	
+			  				
+			  				<div class="text">
+			  					<?php the_excerpt();?>
+			  				</div>
+			  					
+			  					<a href="<?php the_permalink();?>" class="btn btn-info" role="button">Continuar Lendo</a>
+			  						
+			  				
+			  					
+			  					
+			  					
+							 </div>
+					</div>
+					</div>
+			<?php endwhile; ?>
+		</div>
 			
-		
-		</div>
 
-<div id="localizacao" class="row">
+    </div>
+
 	
-		<div class="col-md-7">                    
-                              
-             <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1863271.87898519!2d-48.31813243664412!3d-24.199672839894493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!3m2!1d-23.550519899999998!2d-46.633309399999995!4m5!1s0x94dae4bd9223c3bb%3A0x4f29622104147532!2sCanan%C3%A9ia+-+SP!3m2!1d-25.012545499999998!2d-47.9352728!5e0!3m2!1spt-BR!2sbr!4v1448404790040" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>			
-		</div>
 
-		<div class="col-md-5">                    
-                  <div class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-    </div>
-    <div class="col-sm-7">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-                                
-							
-		</div>
-		
-</div>
-		<a href="#myPage" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-		</a>
-	</section>
+	<div class="space2"></div>
 
+	<section id=""></section>
+	<section id="sobre"></section>
+	<section id="servico"></section>
+	<section id="localizacao"></section>
+	<section id="contato"></section>
+	
+	
+	
 
-	<section id="contato">
-		<h3>CONTATO</h3>
+	
 
-		<a href="<?php echo get_option('home');?>" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-		</a>
-		
-                              
-		
-	</section>
+	
+
 
 
 <?php wp_footer();?>

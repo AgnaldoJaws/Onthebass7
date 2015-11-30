@@ -4,22 +4,45 @@
 	
 	body {
 	
-	>.row{	
 	
-	 margin-left:-112px;
+	> .head {
+	margin-top:-250px;
+		> #content_content {
+		
+		}
+	}
+	
+	> #space {	
+	margin-bottom:250px;	
+	height:10px;	
+	}
+	
+	>.row{	
+	margin-left:55px;
+	
+	
 	> #subRow {	
+	margin-left:-90px;
 		> #myCarousel{
 		
 		
 		> .carousel-inner{
 		
 			> .item{
-			width:600px;
+			width:110%;
 			height:200px;
 			
-			> .carousel-caption{
-			margin-left:-200px;
 			
+			> .carousel-caption{
+			margin-left:-20%;
+		
+			
+			
+			h4 {
+			font-size:11px;
+			margin-left:1px;
+			
+			}
 			}
 			}
 			
@@ -85,7 +108,48 @@
 /*TABLE*/
 @media screen and (min-width: 701px) and (max-width: 1024px) { 
 	
-	body {	
+	body {
+	
+	> .head {
+	
+		> #content_content {
+		
+		}
+	}
+	 	
+	> .row {
+	
+	
+	
+	> #sorte {
+	
+	
+	margin-top:-4650px;
+	
+	> .panel {
+	
+	
+	
+	
+	}
+	}
+	
+	}
+	
+	> #navegacao {
+		> .container {
+		> #navegacao__content {
+		> .navbar {
+		margin-left:-50px;
+		}
+		
+		}
+		
+		
+		}
+	
+	
+	}
 	
 	> #header {
 		> .content {
@@ -151,6 +215,11 @@
 
 body {
 
+
+	
+	
+
+
 	> #header {
 		> .content {
 			@include make-row;
@@ -164,7 +233,7 @@ body {
 			
 			
 			> .logo2 {
-			margin-top:-150px;
+			margin-top:-130px;
 				@include make-sm-column(3);
 				@include make-sm-column-offset(9);
 			

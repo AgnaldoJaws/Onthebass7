@@ -2,6 +2,18 @@ body {
 background:url(../img/fundo.png);
 
 
+> .row{
+	> #sorte {
+		> #cara {
+	
+	margin-top:1365px;
+	}
+	}
+
+}
+
+
+
 > #header {
 		> .content {
 			@include make-row;
@@ -43,13 +55,7 @@ footer .glyphicon {
     margin-bottom: 20px;
     color: red;
 }
- section{
-    
-	width:785px;
-	height:630px;
-	border: solid black 1px;
-	margin-left:8%;
-}
+ 
 
 
 >.row{
@@ -61,15 +67,31 @@ footer .glyphicon {
 	> #subRow {
 	
 		> #myCarousel{
-		margin-left:100px;
+		margin-left:20px;
 		
 		> .carousel-inner{
 		
 			> .item{
 			width:1060px;
-			> .carousel-caption{
-			margin-left:-350px;
 			
+			> .carousel-caption{
+			height:120px;
+			border:solid black 1px;
+			background-color:black;
+			width:100%;
+			opacity:0.8;
+			margin-left:-220px;
+			
+			h2 {
+			color:white;
+			margin-top:-5px;
+			margin-left:-15%;
+			}
+			
+			h4 {
+			color:white;
+			margin-left:-15%;
+			}
 			}
 			}
 			
