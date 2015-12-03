@@ -33,7 +33,7 @@
 <style>
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
 	width:100%;
-	height: 340px;
+	height: 325px;
 }
 </style>
 </head>
@@ -60,10 +60,9 @@
 
 				<div class="panel-body">
 
-					<form action="">
-						<input class="form-control search-container__input" type="text"
-							placeholder="Pesquisar no site">
-					</form>
+					<div class="search-form-container">
+					<?php get_search_form(); ?>
+				   </div>
 
 
 					<a href="https://www.facebook.com/belavistaagroecologico/?fref=ts"><img
@@ -106,6 +105,7 @@
 								<li class="active"><a href="<?php echo get_option('home');?>">Home
 								</a></li>
 								<li><a href="#sobre" data-scroll>Sobre</a></li>	
+								<li><a href="#novidade" data-scroll>Novidades</a></li>	
 								<li><a href="#servicos" data-scroll>Servicos</a></li>
 								<li><a href="#localizacao" data-scroll>localizacao</a></li>									
 								<li><a href="#contato">Contato</a></li>
@@ -211,54 +211,95 @@
 	
 
 	
-	<section id="">
-	
-	<div class="row" >		
+	<section id="novidade">
+		
+		<div class="row">
 
-	<div class="col-md-8">
-	<?php $aRecentPosts = new WP_Query("showposts=3"); 
-       while($aRecentPosts->have_posts()) : $aRecentPosts->the_post();?>
-	 			
+			<div class="col-md-8" id="row_sidebar">
+				
+	 <?php $aRecentPosts = new WP_Query("showposts=3"); 
+       while($aRecentPosts->have_posts()) : $aRecentPosts->the_post();?>			
 				<div class="panel panel-default">
-   
-				<div class="titleS">
-						<h3> <?php the_title();?></h3>
-				</div>
-  				<a href="<?php the_permalink();?>">Link</a>
-  				<div class="img">
-  					<?php the_post_thumbnail(array(750,750))?>	
-  				</div>	
-  				
-  					
-  					<div class="textS">
-  					<?php the_excerpt();?>
-  					</div>
-  					
-  				Publicado por <?php the_author()?>
+							<div class="panel-body">
+
+								<div class="title">
+									<h3><?php the_title();?></h3>
+								</div>
+
+								<div class="imagem">
+									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(array(750,750))?></a>
+								</div>
+
+
+								<div class="texto">
+								<?php the_excerpt();?>	
+								</div>
+
+								<div class="pub">
+									<h5>
+						Publicado por <?php the_author()?>
 						 em <?php the_date("d/m/Y")?>
 				- <?php comments_number("Nenhum Comentário","1 Comentário","% comentários")?>
-  				
 				
-					
-				<?php endwhile; ?>
+				</h5>
+								</div>
+
+
+								<a href="<?php the_permalink(); ?>">
+									<a href="<?php the_permalink();?>" class="btn btn-success" role="button">Continuar Lendo</a>
+								</a>
+							</div>
+						</div>
+				
+				
+				<?php endwhile; ?> 
+				
+							
+				
+				
 	         </div>
-		</div>
-	</div>
-				
-	         
+				</div>
+			
 	</section>
-	<section id=""></section>
-	<section id="sobre"></section>
-	<section id="servico"></section>
-	<section id="localizacao"></section>
-	<section id="contato"></section>
 	
-	
-	
+<section id=""></section>
+<section id=""></section>
+<section id=""></section>
+<section id="sobre"></section>
+<section id="servicos"></section>
+<section id="contato">
+ <div class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section id="localizacao">
+<iframe src="https://mapsengine.google.com/map/embed?mid=zbUwcYnYwKvU.kzJUOnvw5vMY" width="100%" height="570"></iframe>
 
-	
-
-	
+</section>
 
 
 
