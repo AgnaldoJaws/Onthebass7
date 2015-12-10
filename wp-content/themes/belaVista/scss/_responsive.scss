@@ -19,14 +19,15 @@
 	height:10px;	
 	}
 	
-	>.row{	
-	margin-left:55px;
+	> #slider1 {	
+	
+
 	
 	
 	> #subRow {	
-	margin-left:-90px;
+	margin-left:-40px;
 		> #myCarousel{
-		
+		width:100%;
 		
 		> .carousel-inner{
 		
@@ -42,8 +43,13 @@
 			
 			h4 {
 			font-size:11px;
-			margin-left:1px;
+			margin-left:10px;
 			
+			}
+			
+			h2 {
+			font-size:20px;
+			margin-left:5%;
 			}
 			}
 			}
@@ -181,7 +187,7 @@
 	}
 	
 	
-	>.row{	
+	>#slider1{	
 		> #subRow {	
 			> #myCarousel{
 				margin-left:5px;
@@ -205,6 +211,59 @@
 @media screen and (min-width: 1025px) and (max-width:1500px) {
 
 body {
+
+
+> #navegacao{
+	
+	
+	
+		> .container {
+			> #navegacao__content {
+			margin-left:11%;
+			.navbar {
+			
+			margin-left:75px;
+			
+				
+				
+				.navbar-collapse{
+					
+					>ul.navbar-nav{
+						> li{
+							&.active{
+								> a{
+								   
+								   
+									
+						}
+						}
+						a{
+							
+							&:hover{
+						
+							}
+						}
+				}
+				
+				}
+				}
+			
+			}
+			}
+		
+		}
+	
+	
+	}	
+
+
+section {
+
+	> #novidadeRow {
+		margin-left:1%;
+		
+	}
+}
 
 
 	> .row {

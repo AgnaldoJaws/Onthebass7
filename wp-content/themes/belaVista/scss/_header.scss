@@ -3,6 +3,10 @@ background:url(../img/fundo.png);
 
 
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Montserrat-UltraLight.otf);
+}
 
 
 
@@ -13,6 +17,7 @@ background:url(../img/fundo.png);
 			> .logo1 {
 			
 			@include make-xs-column-offset(3);
+			
 			
 				
 			
@@ -50,11 +55,9 @@ footer .glyphicon {
  
 
 
->.row{
-	
+> #slider1{	
 	 margin-top:5px;
-	
-	
+	 
 	
 	> #subRow {
 	
@@ -123,14 +126,16 @@ footer .glyphicon {
 							&.active{
 								> a{
 								   background:#0d980d;
+								   
 									
 						}
 						}
 						a{
 							color:#fff;
-							font: bold 16px $font_main;
+							font-size: 20px;
+							font-family:  myFirstFont;
 							&:hover{
-								background:#0d980d;
+							background:#0d980d;
 							}
 						}
 				}
