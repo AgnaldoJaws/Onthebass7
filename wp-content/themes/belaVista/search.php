@@ -21,7 +21,7 @@ img,
 }
 
 .title{	
-	margin-left: 25%;
+	margin-left:auto;
 	
 	}
 	
@@ -32,7 +32,7 @@ img,
 	}
 	
 	.btn {
-	margin-left:45%;
+	margin-left:30%;
 	}
 	
 	.sidebar .widgets {
@@ -80,16 +80,12 @@ img,
 </style>
 
 <body>		
-		<p> Agnaldo </p>
+	
 		<div class="row" >
 	
 	
 
 	<div id ="singleBorder2" class="col-md-offset-2 col-md-8">
-		
-		
-		
-
 		<?php 
 		
 		if( have_posts() ):

@@ -37,7 +37,7 @@
 	
 }
 
-@media screen and (min-width: 1025px) and (max-width:1500px) { 
+@media screen and (min-width: 700px) and (max-width:1500px) { 
 	
 	.carousel-inner>.item>img, .carousel-inner>.item>a>img {
 	
@@ -273,53 +273,10 @@ significado destes problemas, uma vez que o início da atividade geral de forma�
 	</section>
 
 
-	<section id="servicos">
-	<div class="container-fluid text-center bg-grey">
-  <h2>Serviços</h2>
-  <h4>What we have created</h4>
-  <div class="row text-center">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="http://www.onthebass.com.br/st-belavista/refeicoes-com-alimento-sem-agrotoxico.jpg" alt="Paris">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="http://www.onthebass.com.br/st-belavista/apicultura-criacao-de-abelhas.jpg" alt="New York">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="http://www.onthebass.com.br/st-belavista/meliponicultura-criacao-de-abelhas-sel-ferrao%20.JPG" alt="San Francisco">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-     <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="http://www.onthebass.com.br/st-belavista/meliponicultura-criacao-de-abelhas-sel-ferrao%20.JPG" alt="San Francisco">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-     <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="http://www.onthebass.com.br/st-belavista/meliponicultura-criacao-de-abelhas-sel-ferrao%20.JPG" alt="San Francisco">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-</div>
-		<a href="<?php echo get_option('home');?>" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-		</a>
-	</section>
+	
 
-<section id=""></section>
+
+
 	<section id="novidade">
 
 		<div id="novidadeRow" class="row">
@@ -352,7 +309,7 @@ $aRecentPosts = new WP_Query ( "showposts=3" );
 							<h5>
 						Publicado por <?php the_author()?>
 						 em <?php the_date("d/m/Y")?>
-				- <?php comments_number("Nenhum Comentário","1 Comentário","% comentários")?>
+				
 				
 				</h5>
 						</div>
@@ -376,9 +333,9 @@ $aRecentPosts = new WP_Query ( "showposts=3" );
 
 	</section>
 
-	<section id=""></section>
-	<section id=""></section>
+	<div class="apace3">
 
+</div>
 
 	<section id="contato">
 		<div class="container-fluid bg-grey">
@@ -433,6 +390,51 @@ $aRecentPosts = new WP_Query ( "showposts=3" );
 	</section>
 
 
+<div id="servicos">
+	<div class="container-fluid text-center bg-grey">
+  <h2>Serviços</h2>
+  <h4>What we have created</h4>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://www.onthebass.com.br/st-belavista/refeicoes-com-alimento-sem-agrotoxico.jpg" alt="Paris">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://www.onthebass.com.br/st-belavista/apicultura-criacao-de-abelhas.jpg" alt="New York">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://www.onthebass.com.br/st-belavista/meliponicultura-criacao-de-abelhas-sel-ferrao%20.JPG" alt="San Francisco">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+     <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://www.onthebass.com.br/st-belavista/meliponicultura-criacao-de-abelhas-sel-ferrao%20.JPG" alt="San Francisco">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+     <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://www.onthebass.com.br/st-belavista/meliponicultura-criacao-de-abelhas-sel-ferrao%20.JPG" alt="San Francisco">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+</div>
+		<a href="<?php echo get_option('home');?>" title="To Top"> <span
+			class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+	</div>
 
 <?php wp_footer();?>
 

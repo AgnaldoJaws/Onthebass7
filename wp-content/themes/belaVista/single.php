@@ -21,12 +21,12 @@ img,
 }
 
 .title{	
-	margin-left: 25%;
+	margin-left:auto;
 	
 	}
 	
 	.texto {
-	width: 90%;
+	width: 100%;
 	text-align: justify;
 	
 	}
@@ -36,7 +36,7 @@ img,
 	}
 </style>
 	<body>		
-		<p> Agnaldo </p>
+		
 		<div class="row" >
 	
 	
